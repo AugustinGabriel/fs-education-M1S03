@@ -7,7 +7,12 @@ public class Repeticao {
 
         /* WHILE */
         int contador = 1;
-        while (contador <= 100) {
+        while (true) {
+
+            if (contador > 100) {
+                break;
+            }
+
             if (contador % 2 == 0) {
                 System.out.println(contador);
             }
