@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Colecao {
@@ -5,7 +7,7 @@ public class Colecao {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        double[] dimensoes = new double[3];
+        List<Double> dimensoes = new ArrayList<>();
 
         System.out.println("*****************************************************");
         System.out.println("*                     Bem vindo                     *");
@@ -13,15 +15,16 @@ public class Colecao {
         System.out.println("*****************************************************");
 
         System.out.print("Digite a altura: ");
-        dimensoes[0] = entrada.nextDouble();
+        dimensoes.add(entrada.nextDouble());
 
         System.out.print("Digite a largura: ");
-        dimensoes[1] = entrada.nextDouble();
+        dimensoes.add(entrada.nextDouble());
 
         System.out.print("Digite o comprimento: ");
-        dimensoes[2] = entrada.nextDouble();
+        dimensoes.add(entrada.nextDouble());
 
-        System.out.println("Volume calculado: " + (dimensoes[0] * dimensoes[1] * dimensoes[2]));
+        double volume = dimensoes.get(0) * dimensoes.get(1) * dimensoes.get(2);
+        System.out.println("Volume calculado: " + volume);
     }
 
 }
