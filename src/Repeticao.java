@@ -7,12 +7,7 @@ public class Repeticao {
 
         /* WHILE */
         int contador = 1;
-        while (true) {
-
-            if (contador > 100) {
-                break;
-            }
-
+        while (contador <= 100) {
             if (contador % 2 == 0) {
                 System.out.println(contador);
             }
@@ -24,11 +19,18 @@ public class Repeticao {
         Scanner entrada = new Scanner(System.in);
         int numeroDigitado;
         do {
-            System.out.print("Tente adivinhar o numero sorteado: ");
+            System.out.print("Tente adivinhar o numero sorteado (1 à 10): ");
             numeroDigitado = entrada.nextInt();
         } while (numero != numeroDigitado);
         System.out.println("Parabéns! O número é " + numero);
         entrada.close();
+
+        /* FOR */
+        for (int cont = 1; cont <= 100; cont++) {
+            if (cont % 2 != 0) {
+                System.out.println(cont);
+            }
+        }
 
     }
 

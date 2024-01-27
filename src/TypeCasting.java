@@ -2,6 +2,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class TypeCasting {
+
     public static void main(String[] args) {
         byte primeiroNumero = 4;
         double segundoNumero = primeiroNumero + 0.8;
@@ -38,4 +39,5 @@ public class TypeCasting {
         System.out.println("Expoente: " + Math.pow(sextoNumero, 4));
 
     }
+
 }
